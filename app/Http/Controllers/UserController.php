@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\modelUsers;
+use App\User;
 use Illuminate\Http\Request;
 
-class usersController extends Controller
+class UserController extends Controller
 {
     public  function users(){
-        $usuarios = modelUsers::all();
+        $usuarios = User::all();
         return view('viewUsers', compact('usuarios'));
     }
 }

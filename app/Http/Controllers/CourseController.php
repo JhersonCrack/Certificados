@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\modelCourses;
+use App\Course;
 use Illuminate\Http\Request;
 
-class coursesController extends Controller
+class CourseController extends Controller
 {
     public  function courses(){
-        $cursos = modelCourses::all();
+        $cursos = Course::all();
         return view('viewCourses', compact('cursos'));
     }
 }

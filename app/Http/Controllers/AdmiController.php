@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\modelAdmis;
+use App\Admin;
 use Illuminate\Http\Request;
 
-class admisController extends Controller
+class AdmiController extends Controller
 {
     public function admis(){
-        $administradores = modelAdmis::all();
+        $administradores = Admin::all();
         return view('viewAdmis', compact('administradores'));
     }
 }

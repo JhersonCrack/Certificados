@@ -1,10 +1,10 @@
 <?php
 
-Route::get('certificados','certificatesController@certificates');
-Route::get('usuarios','usersController@users');
-Route::get('cursos','coursesController@courses');
-Route::get('admis','admisController@admis');
-Route::get('temas','temariesController@temaries');
-Route::get('consultas','consultasController@consultas');
+Route::get('certificados','CertificateController@certificates');
+Route::get('usuarios','UserController@users');
+Route::get('cursos','CourseController@courses');
+Route::get('admis','AdmiController@admis');
+Route::get('temas','TemaryController@temaries');
+Route::get('consultas','ConsultaController@consults');
 
 
