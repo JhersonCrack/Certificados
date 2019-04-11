@@ -17,15 +17,16 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($certificados as $item)
+            @foreach($nombres as $item)
+
                 <tr>
-                    <td scope="row">{{ $item->id }}</td>
-                    <td>{{ $item->t_certificateslink }}</td>
-                    <td>{{ $item->qr_key }}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     {{--aqui las llaves foraneas--}}
-                    <td>{{ $item->course_id  }}</td>
-                    <td>{{ $item->partaker_id }}</td>
-                    <td>{{ $item->participation_id }}</td>
+                    <td>{{ $item}}</td>
+                    <td></td>
+                    <td></td>
                 </tr>
             @endforeach
             </tbody>
