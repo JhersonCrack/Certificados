@@ -15,12 +15,10 @@ class CreateCoursesTable extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name_curso', 45);
+            $table->string('name', 45);
             $table->integer('hours');
             $table->double('amount');
             $table->date('date');
-
-            $table->string('qr_key', 10);
             $table->timestamps();
         });
     }

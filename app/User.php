@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
-    protected $table = 'partakers';
+    public function certificates(){
+        return $this->hasMany(Certificate::class);
+    }
 }

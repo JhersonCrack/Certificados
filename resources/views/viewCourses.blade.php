@@ -4,6 +4,7 @@
         <h1 class="display-4">Cursos Realizados</h1>
         <table class="table table-dark">
             <thead>
+            <input type="text" value="Buscar">
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Nombre del Curso</th>
@@ -15,7 +16,7 @@
             <tbody>
             @foreach($cursos as $item)
                 <tr>
-                    <td scope="row">{{ $item->id_course }}</td>
+                    <td scope="row">{{ $item->id }}</td>
                     <td>{{ $item->name_course }}</td>
                     <td>{{ $item->hours }}</td>
                     <td>{{ $item->amount }}</td>

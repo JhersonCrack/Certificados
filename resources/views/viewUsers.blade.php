@@ -14,7 +14,7 @@
             <tbody>
             @foreach($usuarios as $item)
                 <tr>
-                    <td scope="row">{{ $item->id_partaker }}</td>
+                    <td scope="row">{{ $item->id }}</td>
                     <td>{{ $item->name_partaker }}</td>
                     <td>{{ $item->dni }}</td>
                     <td>{{ $item->cod_cip }}</td>

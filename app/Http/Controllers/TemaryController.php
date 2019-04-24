@@ -9,5 +9,6 @@ class TemaryController extends Controller
 public function temaries(){
 $temas = Temary::all();
 return view('viewTemaries', compact('temas'));
+//    return $temas;
 }
 }

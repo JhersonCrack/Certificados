@@ -14,10 +14,10 @@
             <tbody>
             @foreach($temas as $item)
                 <tr>
-                    <td scope="row">{{ $item->id_temary }}</td>
-                    <td>{{ $item->name_temary }}</td>
-                    <td>{{ $item->name_ponente }}</td>
-                    <td>{{ $item->id_course_id }}</td>
+                    <td scope="row">{{ $item->id }}</td>
+                    <td>{{ $item->name }}</td>
+                    <td>{{ $item->ponent }}</td>
+                    <td>{{ $item->course->name }}</td>
                 </tr>
             @endforeach
             </tbody>

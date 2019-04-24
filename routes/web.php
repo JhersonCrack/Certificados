@@ -1,6 +1,6 @@
 <?php
 
-Route::get('certificados','CertificateController@certificates');
+Route::get('/','CertificateController@certificates')->name('certifis');
 Route::get('usuarios','UserController@users');
 Route::get('cursos','CourseController@courses');
 Route::get('admis','AdmiController@admis');

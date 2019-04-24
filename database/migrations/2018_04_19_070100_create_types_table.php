@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTemariesTable extends Migration
+class CreateTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateTemariesTable extends Migration
      */
     public function up()
     {
-        Schema::create('temaries', function (Blueprint $table) {
-            $table->bigIncrements('id_temary');
-            $table->string('name_temary',300);
-            $table->string('name_ponente',60);
-            //lave foranea de t_curso.id
-
+        Schema::create('types', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreateTemariesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('temaries');
+        Schema::dropIfExists('types');
     }
 }
