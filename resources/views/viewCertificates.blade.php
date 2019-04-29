@@ -13,7 +13,7 @@
                 <img class="sp-default-logo" src="./images/logo_eling_puno.png" alt="El Ingeniero" width="300px">
             </p>
             <div class="col-md-8">
-                <div class="page-header">
+                {{-- <div class="page-header">
                     {{ Form::open(['route' => 'certifis', 'method' => 'GET', 'class'=> 'form-inline pull-right']) }}
                         <div class="form-group">
                             {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nombre']) }}
@@ -30,7 +30,18 @@
                             </button>
                         </div>
                     {{ Form::close() }}
-                </div>
+                </div> --}}
+                <form class="form-group" action="/searchCodigo" method="GET">
+                    <div class="form-inline">
+                        <label>Codigo Cip</label>
+                        <input type="search" name="search" class="form-control" placeholder="Cip">
+                        <span class="form-group-btn">
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
             </div>
             <div class="col-md-12">
                 <table class="table table-hover table-striped">
@@ -47,19 +58,19 @@
                         @foreach($certificados as $item)
                         <tr>
                             <td> {{ $item->id }}</td>
-                            <td> {{ $item->user->name }}</td>
-                            <td> {{ $item->user->dni }}</td>
-                            <td> {{ $item->user->cip }}</td>
-                            <td> {{ $item->course->name }}</td>
-                            <td> {{ $item->type->name }}</td>
+                            <td> {{ $item->user_name }}</td>
+                            <td> {{ $item->user_dni }}</td>
+                            <td> {{ $item->user_cip }}</td>
+                            <td> {{ $item->curso_name }}</td>
+                            <td> {{ $item->type_name }}</td>                        
                         </tr>
                         @endforeach
                     </tbody>
                 </table>
-                {{ $certificados->render() }}
+               
             </div>
-
         </div>
+        <a href="/" class="btn btn-info">Regresar</a>
     </div>
 </body>
 </html>

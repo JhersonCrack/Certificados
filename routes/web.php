@@ -7,4 +7,8 @@ Route::get('admis','AdmiController@admis');
 Route::get('temas','TemaryController@temaries');
 Route::get('consultas','ConsultaController@consults');
 
+//Busqueda -> solo codigo agregar ... otras busquedas con sus controladores ->  
+Route::get('/searchCodigo', 'CertificateController@searchCodigo');
+
+
 
