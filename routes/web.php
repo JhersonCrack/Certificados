@@ -12,3 +12,7 @@ Route::get('/searchCodigo', 'CertificateController@searchCodigo');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
