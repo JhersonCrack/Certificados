@@ -38,12 +38,12 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'usuarios',
+            'provider' => 'admis',
         ],
 
         'api' => [
             'driver' => 'token',
-            'provider' => 'usuarios',
+            'provider' => 'admis',
             'hash' => false,
         ],
     ],
@@ -68,7 +68,7 @@ return [
     'providers' => [
         'usuarios' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Admi::class,
         ],
 
         // 'usuarios' => [
@@ -94,7 +94,7 @@ return [
 
     'passwords' => [
         'usuarios' => [
-            'provider' => 'usuarios',
+            'provider' => 'admis',
             'table' => 'password_resets',
             'expire' => 60,
         ],

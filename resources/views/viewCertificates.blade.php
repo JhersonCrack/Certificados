@@ -43,14 +43,17 @@
                     </div>
                 </form>
             </div>
+            <div class="col-md-4">
+                <a href="">Sólo Administradores</a>
+            </div>
             <div class="col-md-12">
                 <table class="table table-hover table-striped">
                     <br>
                     <tr style="background: #343a40; color: white !important">
                         <th scope="col">N°</th>
-                        <th scope="col">Nombre del Colegiado</th>
+                        <th scope="col">Nombre</th>
                         <th scope="col">DNI</th>
-                        <th scope="col">Cod CIP</th>
+                        <th scope="col">CIP</th>
                         <th scope="col">Curso</th>
                         <th scope="col">Participación</th>
                     </tr>

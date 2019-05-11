@@ -4,8 +4,8 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\User::class, function (Faker $faker) {
     return [
+        'name' => $faker->name,
         'dni' => $faker->randomNumber(8),
-        'cip' => $faker->randomNumber(5),
-        'name' => $faker->name
+        'cip' => $faker->randomNumber(5)
     ];
 });

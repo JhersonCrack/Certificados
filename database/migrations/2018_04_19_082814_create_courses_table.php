@@ -19,6 +19,7 @@ class CreateCoursesTable extends Migration
             $table->integer('hours');
             $table->double('amount');
             $table->date('date');
+            $table->string('code')->unique();
             $table->timestamps();
         });
     }

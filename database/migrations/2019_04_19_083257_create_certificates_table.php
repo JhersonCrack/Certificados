@@ -25,7 +25,7 @@ class CreateCertificatesTable extends Migration
 
             //referenciando las llaves foraneas
             $table->foreign('course_id')->references('id')->on('courses');
-            $table->foreign('user_id')->references('id')->on('usuarios');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('type_id')->references('id')->on('types');
             $table->timestamps();
         });

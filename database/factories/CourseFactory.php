@@ -7,6 +7,7 @@ $factory->define(\App\Course::class, function (Faker $faker) {
         'name' => $faker->word,
         'hours' => $faker->randomNumber(2),
         'amount' => $faker->randomFloat(2,0,1000),
-        'date' => $faker->date('Y-m-d', 'now')
+        'date' => $faker->date('Y-m-d', 'now'),
+        'code' => $faker->md5
     ];
 });
