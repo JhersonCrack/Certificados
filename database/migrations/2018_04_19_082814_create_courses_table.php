@@ -1,11 +1,9 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCoursesTable extends Migration
-{
+class CreateCoursesTable extends Migration{
     /**
      * Run the migrations.
      *
@@ -20,6 +18,7 @@ class CreateCoursesTable extends Migration
             $table->double('amount');
             $table->date('date');
             $table->string('code')->unique();
+
             $table->timestamps();
         });
     }

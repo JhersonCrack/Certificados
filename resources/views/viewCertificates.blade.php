@@ -13,24 +13,6 @@
                 <img class="sp-default-logo" src="./images/logo_eling_puno.png" alt="El Ingeniero" width="300px">
             </p>
             <div class="col-md-8">
-                {{-- <div class="page-header">
-                    {{ Form::open(['route' => 'certifis', 'method' => 'GET', 'class'=> 'form-inline pull-right']) }}
-                        <div class="form-group">
-                            {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nombre']) }}
-                        </div>
-                        <div class="form-group">
-                            {{ Form::text('dni', null, ['class' => 'form-control', 'placeholder' => 'DNI']) }}
-                        </div>
-                        <div class="form-group">
-                            {{ Form::text('cip', null, ['class' => 'form-control', 'placeholder' => 'Cod CIP']) }}
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-default">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                        </div>
-                    {{ Form::close() }}
-                </div> --}}
                 <form class="form-group" action="/searchCodigo" method="GET">
                     <div class="form-inline">
                         <label>Codigo Cip</label>
@@ -43,9 +25,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-4">
-                <a href="">Sólo Administradores</a>
-            </div>
+
             <div class="col-md-12">
                 <table class="table table-hover table-striped">
                     <br>
@@ -70,7 +50,6 @@
                         @endforeach
                     </tbody>
                 </table>
-               
             </div>
         </div>
         <a href="/" class="btn btn-info">Regresar</a>

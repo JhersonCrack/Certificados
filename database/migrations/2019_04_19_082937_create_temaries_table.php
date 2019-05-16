@@ -1,11 +1,9 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTemariesTable extends Migration
-{
+class CreateTemariesTable extends Migration{
     /**
      * Run the migrations.
      *
@@ -18,8 +16,10 @@ class CreateTemariesTable extends Migration
             $table->string('name',300);
             $table->string('ponent',60);
             $table->unsignedBigInteger('course_id');
-            //lave foranea de t_curso.id
+
+            //llaves foraneas
             $table->foreign('course_id')->references('id')->on('courses');
+
             $table->timestamps();
         });
     }

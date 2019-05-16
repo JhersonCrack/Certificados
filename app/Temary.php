@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Temary extends Model
-{
+class Temary extends Model{
+
     protected $fillable = [
         'name','ponent','course_id'
     ];

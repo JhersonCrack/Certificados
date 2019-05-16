@@ -1,11 +1,8 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
-class CreateCertificatesTable extends Migration
-{
+class CreateCertificatesTable extends Migration{
     /**
      * Run the migrations.
      *
@@ -18,6 +15,7 @@ class CreateCertificatesTable extends Migration
 
             $table->string('file_path');
             $table->string('qr');
+
             //llaves foraneas
             $table->unsignedBigInteger('course_id');
            $table->unsignedBigInteger('user_id');
