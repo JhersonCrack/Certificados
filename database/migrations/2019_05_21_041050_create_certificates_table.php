@@ -18,7 +18,7 @@ class CreateCertificatesTable extends Migration{
 
             //llaves foraneas
             $table->unsignedBigInteger('course_id');
-           $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('type_id');
 
             //referenciando las llaves foraneas

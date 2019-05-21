@@ -7,7 +7,7 @@
                 <h2>Laravel 5.8 CRUD Example from scratch - ItSolutionStuff.com</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
+                <a class="btn btn-success" href=""> Create New Product</a>
             </div>
         </div>
     </div>
@@ -20,22 +20,22 @@
 
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Details</th>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Detalle</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($products as $product)
+        @foreach ($certificados as $item)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $product->name }}</td>
-                <td>{{ $product->detail }}</td>
+                <td>{{ $item->name }}</td>
+                <td>{{ $item->detail }}</td>
                 <td>
-                    <form action="{{ route('products.destroy',$product->id) }}" method="POST">
+                    <form action="{{ route('certificates.destroy',$item->id) }}" method="POST">
 
-                        <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
+                        <a class="btn btn-info" href="{{ route('certificates.show',$item->id) }}">Mostrar</a>
 
-                        <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
+                        <a class="btn btn-primary" href="{{ route('certificates.edit',$item->id) }}">Editar</a>
 
                         @csrf
                         @method('DELETE')
@@ -47,6 +47,6 @@
         @endforeach
     </table>
 
-    {!! $products->links() !!}
+    {!! $certificates->links() !!}
 
 @endsection

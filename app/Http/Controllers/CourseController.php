@@ -9,6 +9,6 @@ class CourseController extends Controller
 {
     public  function courses(){
         $cursos = Course::all();
-        return view('viewCourses', compact('cursos'));
+        return view('courses.create', compact('cursos'));
     }
 }
