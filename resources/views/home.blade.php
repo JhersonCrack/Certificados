@@ -46,7 +46,7 @@
             </table>
         </div>
     </div>
-    {{--<a href="/" class="btn btn-info">Regresar</a>--}}
+    <a href="certificates.create" class="btn btn-info">Crear Certificados</a>
 </div>
 </body>
 @endsection

@@ -12,7 +12,7 @@ class CreateCertificatesTable extends Migration{
     {
         Schema::create('certificates', function (Blueprint $table) {
             $table->bigIncrements('id');
-
+            //name y detail
             $table->string('file_path');
             $table->string('qr');
 
@@ -25,6 +25,7 @@ class CreateCertificatesTable extends Migration{
             $table->foreign('course_id')->references('id')->on('courses');
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('type_id')->references('id')->on('types');
+
             $table->timestamps();
         });
     }

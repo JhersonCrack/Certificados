@@ -2,6 +2,9 @@
 //vista de aterrizaje para consultas, sin login
 Route::get('/','CertificateController@welcome')->name('welcome');
 
+//crud de certificates
+Route::get('crear','CertificateController@create')->name('create');
+
 //vistas de administrador con login
 Route::get('usuarios','UserController@users');
 Route::get('cursos','CourseController@courses');

@@ -25,7 +25,9 @@
                     </div>
                 </form>
             </div>
-
+            <div class="col-md-4">
+                <a href="certificates.create" class="btn btn-info">Crear Certificado</a>
+            </div>
             <div class="col-md-12">
                 <table class="table table-hover table-striped">
                     <br>
@@ -53,6 +55,7 @@
             </div>
         </div>
         <a href="/" class="btn btn-info">Regresar</a>
+
     </div>
 </body>
 </html>
