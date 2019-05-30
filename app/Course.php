@@ -5,7 +5,10 @@ use Illuminate\Database\Eloquent\Model;
 class Course extends Model{
 
     protected $fillable = [
-        'name', 'hours', 'amount', 'date'
+        'name',
+        'hours',
+        'amount',
+        'date'
     ];
 
     public function certificates(){

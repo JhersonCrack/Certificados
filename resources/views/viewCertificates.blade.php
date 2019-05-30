@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <title>Certificados</title>
-    <link href="./requirements/app.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-{{--código neutro--}}
-<body style="background-image: url(http://elingeniero.org.pe/images/binding_light.png);">
+@extends('layouts.app')
+@section('content')
     <div class="container">
         <div class="row">
             <p style="text-align: center; padding: 30px 0px;">
@@ -57,5 +50,4 @@
         <a href="/" class="btn btn-info">Regresar</a>
 
     </div>
-</body>
-</html>
+@endsection

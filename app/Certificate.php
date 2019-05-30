@@ -8,10 +8,20 @@ use Illuminate\Foundation\Auth\User as Authenticable;
 class Certificate extends Model
 {
     protected $fillable = [
-        'file_path', 'qr', 'course_id','user_id','type_id'
+        'file_path',
+        'qr',
+        'course_id',
+        'user_id',
+        'type_id'
     ];
 
-    protected $appends =  ["curso_name","user_name","user_dni","user_cip","type_name"];
+    protected $appends =  [
+        "curso_name",
+        "user_name",
+        "user_dni",
+        "user_cip",
+        "type_name"
+    ];
    
     /**curos**/
     public function getCursoNameAttribute(){
