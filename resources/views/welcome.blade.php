@@ -22,6 +22,7 @@
     <link href="css/myapp.css" rel="stylesheet">
 
 </head>
+<<<<<<< HEAD
 
 <body>
 
@@ -228,6 +229,30 @@
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+=======
+<body style="background-image: url(http://elingeniero.org.pe/images/binding_light.png);">
+<div class="container">
+    <div class="row">
+        <p style="text-align: center; padding: 30px 0px;">
+            <img class="sp-default-logo" src="./images/logo_eling_puno.png" alt="El Ingeniero" width="300px">
+        </p>
+        <div class="col-md-8">
+            <form class="form-group" action="/searchCodigo" method="GET">
+                <div class="form-inline">
+                    <label>Codigo Cip</label>
+                    <input type="search" name="search" class="form-control" placeholder="Cip">
+                    <span class="form-group-btn">
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                </div>
+            </form>
+        </div>
+        <a href="{{ route('home') }}" class="btn btn-info">Modo administrador</a>
+    </div>
+</div>
+>>>>>>> 8fc65a8d5e279959e2b035e20bd9da0cf9bb90d5
 </body>
 
 </html>

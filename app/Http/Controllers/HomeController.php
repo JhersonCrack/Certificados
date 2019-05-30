@@ -20,6 +20,6 @@ class HomeController extends Controller
     public function index()
     {
         $certificados = Certificate::all();
-        return view('viewCertificates', compact('certificados'));
+        return view('home', compact('certificados'));
     }
 }

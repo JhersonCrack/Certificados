@@ -20,6 +20,9 @@
                 </div>
             </form>
         </div>
+        <div class="col-md-4">
+            <a href="{{ route('usuarios.create') }} " class="btn btn-info">Crear Usuarios</a>
+        </div>
         <div class="col-md-12">
             <table class="table table-hover table-striped">
                 <br>
@@ -46,7 +49,6 @@
             </table>
         </div>
     </div>
-    <a href="certificates.create" class="btn btn-info">Crear Certificados</a>
 </div>
 </body>
 @endsection

@@ -1,11 +1,13 @@
 <?php
 //vista de aterrizaje para consultas, sin login
+
 Route::get('/','CertificateController@welcome')->name('welcome');
+
 
 //crud de certificates
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('usuarios','UserController@users');
+	Route::resource('usuarios','UserController');
     Route::get('cursos','CourseController@courses');
     Route::get('temas','TemaryController@temaries');
 
@@ -13,6 +15,11 @@ Route::middleware(['auth'])->group(function () {
 });
 
 //vistas de administrador con login
+
+
+//vistas de administrador con login
+
+Route::get('temas','TemaryController@temaries');
 
 //Busqueda -> solo codigo cip, agregar ... otras busquedas con sus controladores ->
 Route::get('/searchCodigo', 'CertificateController@searchCodigo');
